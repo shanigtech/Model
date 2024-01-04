@@ -1,0 +1,88 @@
+body {
+    background-color: white
+}
+
+.model {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    transform: scale(0);
+}
+
+.model-content {
+    width: 100%;
+    height: 100%;
+    background-color: #26262655;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.model-container {
+    width: 550px;
+    height: auto;
+    padding: 35px 20px 20px 20px;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all .3s ease;
+}
+
+.btn-model-close {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 10px;
+    right: 10px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 17px;
+    color: red;
+}
+
+.model-body {
+    width: 97%;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+}
+
+.model-content::-webkit-scrollbar {
+    display: none;
+}
+
+.model-body::-webkit-scrollbar {
+    width: 7px;
+    background-color: transparent;
+}
+
+.model-body::-webkit-scrollbar-track {
+    width: 100%;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+}
+
+.model-body::-webkit-scrollbar-thumb {
+    background-color: #DDDDDD;
+    border-radius: 10px;
+}
+
+.model-body::-webkit-scrollbar-thumb:hover {
+    background-color: #BBBBBB;
+}
+
+@media only screen and (max-width: 700px) {
+    .model-container {
+        width: 80%;
+    }    
+}
