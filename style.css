@@ -1,5 +1,24 @@
 body {
-    background-color: white
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body > button {
+    font-size: 20px;
+    padding: 10px 25px;
+    background-color: orange;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    cursor: pointer;
 }
 
 .model {
@@ -14,7 +33,7 @@ body {
 .model-content {
     width: 100%;
     height: 100%;
-    background-color: #26262655;
+    background-color: #26262699;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +73,7 @@ body {
     max-height: 500px;
     margin-left: auto;
     margin-right: auto;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .model-content::-webkit-scrollbar {
